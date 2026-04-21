@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import ScreenHeading from "../../Utils/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utils/ScrollService";
 import Animations from "../../Utils/Animations";
+import pavanstand from "../../assets/AboutMe/pavanstand.png"
 import "./Aboutme.css";
 const AboutMe = (props) => {
   let fadeInScreenHandler = (screen) => {
@@ -49,7 +50,9 @@ const AboutMe = (props) => {
       <div className="about-me-parent">
         <ScreenHeading title="About Me" subheading="Why Choose Me?" />
         <div className="about-me-card">
-          <div className="about-me-profile"></div>
+          <div className="about-me-profile" style={{ 
+  backgroundImage: `url(${pavanstand})`,
+            }}></div>
           <div className="about-me-details">
             <span className="about-me-description">
               {SCREEN_CONSTANTS.description}

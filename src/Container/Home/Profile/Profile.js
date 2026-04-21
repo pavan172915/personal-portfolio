@@ -3,7 +3,11 @@ import "./Profile.css"
 // import Typical from "react-typical";
 import { TypeAnimation } from 'react-type-animation';
 import ScrollService from "../../../Utils/ScrollService";
+import chandu from "../../../assets/Home/chandu.png"
+
 const Profile = (props) => {
+
+  console.log(chandu)
   return (
     <div className="profile-container">
       <div className="profile-parent">
@@ -73,7 +77,9 @@ const Profile = (props) => {
           </div>
         </div>
         <div className="profile-picture">
-          <div className="profile-picture-background"></div>
+          <div className="profile-picture-background" style={{ 
+  backgroundImage: `url(${chandu})`,
+            }} ></div>
         </div>
       </div>
     </div>
